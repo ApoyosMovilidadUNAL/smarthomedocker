@@ -1,0 +1,7 @@
+smarthomeapp:
+  image: tomcat
+  ports:
+    - "8081:8080"
+  volumes:
+     - ./webapps/SmartHomeWeb.war:/usr/local/tomcat/webapps/SmartHomeWeb.war
+     - ./webapps/SmartHomeServer.war:/usr/local/tomcat/webapps/SmartHomeServer.war
